@@ -15,7 +15,9 @@ namespace GD_Final_Baternoa
         public Login()
         {
             InitializeComponent();
+            Conexion c = new Conexion();
         }
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -25,6 +27,8 @@ namespace GD_Final_Baternoa
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             //comentario de prueba git Primer intento
+
+            //COMENTARIO EMILIA
         }
     }
 }
