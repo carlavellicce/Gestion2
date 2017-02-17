@@ -1,2 +1,3 @@
 c:\users\emylavenia\documents\visual studio 2015\Projects\GD_Final-Baternoa\GD_Final-Baternoa\bin\Debug\GD_Final-Baternoa.exe.config
 C:\Users\Carla\Documents\GitHub\Gestion\GD_Final-Baternoa\bin\Debug\GD_Final-Baternoa.exe.config
+C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\bin\Debug\GD_Final-Baternoa.exe.config

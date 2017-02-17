@@ -21,5 +21,10 @@ namespace GD_Final_Baternoa
         {
 
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            //comentario de prueba git Primer intento
+        }
     }
 }
