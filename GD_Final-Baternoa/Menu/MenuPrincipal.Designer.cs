@@ -40,54 +40,61 @@
             // 
             // btnProveedores
             // 
-            this.btnProveedores.Location = new System.Drawing.Point(141, 41);
+            this.btnProveedores.Location = new System.Drawing.Point(188, 50);
+            this.btnProveedores.Margin = new System.Windows.Forms.Padding(4);
             this.btnProveedores.Name = "btnProveedores";
-            this.btnProveedores.Size = new System.Drawing.Size(141, 35);
+            this.btnProveedores.Size = new System.Drawing.Size(188, 43);
             this.btnProveedores.TabIndex = 0;
             this.btnProveedores.Text = "Gestión Proveedores";
             this.btnProveedores.UseVisualStyleBackColor = true;
             // 
             // btnClientes
             // 
-            this.btnClientes.Location = new System.Drawing.Point(288, 41);
+            this.btnClientes.Location = new System.Drawing.Point(384, 50);
+            this.btnClientes.Margin = new System.Windows.Forms.Padding(4);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(143, 35);
+            this.btnClientes.Size = new System.Drawing.Size(191, 43);
             this.btnClientes.TabIndex = 1;
             this.btnClientes.Text = "Gestión Clientes";
             this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // btnEmpleados
             // 
-            this.btnEmpleados.Location = new System.Drawing.Point(437, 41);
+            this.btnEmpleados.Location = new System.Drawing.Point(583, 50);
+            this.btnEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.btnEmpleados.Name = "btnEmpleados";
-            this.btnEmpleados.Size = new System.Drawing.Size(141, 35);
+            this.btnEmpleados.Size = new System.Drawing.Size(188, 43);
             this.btnEmpleados.TabIndex = 3;
             this.btnEmpleados.Text = "Gestión Empleados";
             this.btnEmpleados.UseVisualStyleBackColor = true;
             // 
             // btnCompra
             // 
-            this.btnCompra.Location = new System.Drawing.Point(100, 150);
+            this.btnCompra.Location = new System.Drawing.Point(133, 185);
+            this.btnCompra.Margin = new System.Windows.Forms.Padding(4);
             this.btnCompra.Name = "btnCompra";
-            this.btnCompra.Size = new System.Drawing.Size(102, 63);
+            this.btnCompra.Size = new System.Drawing.Size(136, 78);
             this.btnCompra.TabIndex = 4;
             this.btnCompra.Text = "COMPRA";
             this.btnCompra.UseVisualStyleBackColor = true;
             // 
             // btnVenta
             // 
-            this.btnVenta.Location = new System.Drawing.Point(242, 150);
+            this.btnVenta.Location = new System.Drawing.Point(323, 185);
+            this.btnVenta.Margin = new System.Windows.Forms.Padding(4);
             this.btnVenta.Name = "btnVenta";
-            this.btnVenta.Size = new System.Drawing.Size(97, 64);
+            this.btnVenta.Size = new System.Drawing.Size(129, 79);
             this.btnVenta.TabIndex = 5;
             this.btnVenta.Text = "VENTA";
             this.btnVenta.UseVisualStyleBackColor = true;
             // 
             // btnLiquidacion
             // 
-            this.btnLiquidacion.Location = new System.Drawing.Point(378, 148);
+            this.btnLiquidacion.Location = new System.Drawing.Point(504, 182);
+            this.btnLiquidacion.Margin = new System.Windows.Forms.Padding(4);
             this.btnLiquidacion.Name = "btnLiquidacion";
-            this.btnLiquidacion.Size = new System.Drawing.Size(95, 65);
+            this.btnLiquidacion.Size = new System.Drawing.Size(127, 80);
             this.btnLiquidacion.TabIndex = 6;
             this.btnLiquidacion.Text = "LIQUIDACIÓN";
             this.btnLiquidacion.UseVisualStyleBackColor = true;
@@ -95,27 +102,29 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(526, 276);
+            this.btnSalir.Location = new System.Drawing.Point(701, 340);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.Size = new System.Drawing.Size(100, 28);
             this.btnSalir.TabIndex = 7;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             // 
             // btnProductos
             // 
-            this.btnProductos.Location = new System.Drawing.Point(12, 41);
+            this.btnProductos.Location = new System.Drawing.Point(16, 50);
+            this.btnProductos.Margin = new System.Windows.Forms.Padding(4);
             this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Size = new System.Drawing.Size(123, 35);
+            this.btnProductos.Size = new System.Drawing.Size(164, 43);
             this.btnProductos.TabIndex = 8;
             this.btnProductos.Text = "Gestión Productos";
             this.btnProductos.UseVisualStyleBackColor = true;
             // 
             // MenuPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(613, 321);
+            this.ClientSize = new System.Drawing.Size(817, 395);
             this.Controls.Add(this.btnProductos);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnLiquidacion);
@@ -124,8 +133,11 @@
             this.Controls.Add(this.btnEmpleados);
             this.Controls.Add(this.btnClientes);
             this.Controls.Add(this.btnProveedores);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MenuPrincipal_FormClosing);
+            this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.ResumeLayout(false);
 
         }

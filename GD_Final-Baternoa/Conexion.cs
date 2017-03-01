@@ -16,7 +16,7 @@ namespace GD_Final_Baternoa
         SqlCommand cmd;
         SqlDataAdapter dr;
 
-        public Conexion()
+        public void abrirConexion()
         {
             try
             {
@@ -24,10 +24,15 @@ namespace GD_Final_Baternoa
                 cn.Open();
                 MessageBox.Show("Conectado");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("No se conecto la base de datos: " + ex.ToString());
             }
         }
+        public void cerrarConexion()
+        {
+            cn.Close();
+        }
+
     }
 }

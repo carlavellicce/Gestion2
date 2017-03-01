@@ -4,3 +4,21 @@ C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\bin\Debug\GD_Final-Batern
 C:\Users\EmyLavenia\Documents\Visual Studio 2015\Projects\GESTION-V2\GD_Final-Baternoa\bin\Debug\GD_Final-Baternoa.exe.config
 C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\obj\Debug\GD_Final-Baternoa.exe
 C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\obj\Debug\GD_Final-Baternoa.pdb
+C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\bin\Debug\GD_Final-Baternoa.exe
+C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\bin\Debug\GD_Final-Baternoa.pdb
+C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\obj\Debug\GD_Final-Baternoa.csprojResolveAssemblyReference.cache
+C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Cliente.ABMClientes.resources
+C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Empleado.ABMEmpleados.resources
+C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Empleado.ABMFamiliar.resources
+C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Liquidacion.AdminConceptos.resources
+C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Liquidacion.PantallaLiquidacion.resources
+C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Liquidacion.PantallaNovedades.resources
+C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Liquidacion.Principal.resources
+C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Login.resources
+C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Menu.MenuPrincipal.resources
+C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Producto.ABMProductos.resources
+C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Producto.CompraProductos.resources
+C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Properties.Resources.resources
+C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Proveedor.ABMProveedores.resources
+C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Venta.PantallaVenta.resources
+C:\Users\Carla\Source\Repos\Gestion2\GD_Final-Baternoa\obj\Debug\GD_Final-Baternoa.csproj.GenerateResource.Cache
