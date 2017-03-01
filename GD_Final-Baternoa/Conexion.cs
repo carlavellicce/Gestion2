@@ -24,7 +24,7 @@ namespace GD_Final_Baternoa
         {
             try
             {
-                cn = new SqlConnection("Data Source=.;Initial Catalog=Gestion-V2;User ID=sa;Password=12345");
+                cn = new SqlConnection("Data Source=.;Initial Catalog=Gestion-V2;Integrated Security=True");
                 cn.Open();
                 MessageBox.Show("Conectado");
             }
@@ -88,7 +88,7 @@ namespace GD_Final_Baternoa
 
         public void CargarComboBoxAnidado(ComboBox cbb, string idProvincia)
         {
-            string cad = "SELECT idLocalidad,NombreLocalidad FROM Localidad WHERE idProvincia = @idProvincia ";
+            string cad = "SELECT idLocalidad,NombreLocalidad FROM Localidad WHERE idProvincia = @idProvincia";
             cmd = new SqlCommand(cad, cn);
             cmd.Parameters.AddWithValue("idProvincia", idProvincia);
             SqlDataAdapter da = new SqlDataAdapter(cmd);

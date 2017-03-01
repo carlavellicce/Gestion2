@@ -24,7 +24,7 @@ namespace GD_Final_Baternoa.Proveedor
 
             c.CargarComboBox(comboBoxProvinciaProveedor);
 
-            //c.CargarComboBoxAnidado(comboBoxLocalidadProveedor);
+            c.CargarComboBoxAnidado(comboBoxLocalidadProveedor);
 
 
         }
@@ -45,7 +45,7 @@ namespace GD_Final_Baternoa.Proveedor
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-           // if (comboBoxProvinciaProveedor.SelectedValue.ToString() != null)
+           if (comboBoxProvinciaProveedor.SelectedValue.ToString() != null)
             {
              
             //string provincia = comboBoxProvinciaProveedor.DisplayMember.ToString();
