@@ -46,6 +46,7 @@
             this.btnProveedores.TabIndex = 0;
             this.btnProveedores.Text = "Gestión Proveedores";
             this.btnProveedores.UseVisualStyleBackColor = true;
+            this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
             // 
             // btnClientes
             // 
@@ -55,6 +56,7 @@
             this.btnClientes.TabIndex = 1;
             this.btnClientes.Text = "Gestión Clientes";
             this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // btnEmpleados
             // 

@@ -101,17 +101,17 @@
     <Compile Include="Menu\MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Producto\ABMProductos.cs">
+    <Compile Include="Producto\ABMConsulta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Producto\ABMProductos.Designer.cs">
-      <DependentUpon>ABMProductos.cs</DependentUpon>
+    <Compile Include="Producto\ABMConsulta.Designer.cs">
+      <DependentUpon>ABMConsulta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Producto\CompraProductos.cs">
+    <Compile Include="Producto\NuevoProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Producto\CompraProductos.Designer.cs">
-      <DependentUpon>CompraProductos.cs</DependentUpon>
+    <Compile Include="Producto\NuevoProducto.Designer.cs">
+      <DependentUpon>NuevoProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -154,11 +154,11 @@
     <EmbeddedResource Include="Menu\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Producto\ABMProductos.resx">
-      <DependentUpon>ABMProductos.cs</DependentUpon>
+    <EmbeddedResource Include="Producto\ABMConsulta.resx">
+      <DependentUpon>ABMConsulta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Producto\CompraProductos.resx">
-      <DependentUpon>CompraProductos.cs</DependentUpon>
+    <EmbeddedResource Include="Producto\NuevoProducto.resx">
+      <DependentUpon>NuevoProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

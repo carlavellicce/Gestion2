@@ -29,6 +29,16 @@ namespace GD_Final_Baternoa
             //comentario de prueba git Primer intento
 
             //COMENTARIO EMILIA
+
+
+            Menu.MenuPrincipal MP = new Menu.MenuPrincipal();
+            MP.Visible = true;
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            Conexion c = new Conexion();
         }
     }
 }
