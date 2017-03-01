@@ -45,12 +45,12 @@ namespace GD_Final_Baternoa.Proveedor
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBoxProvinciaProveedor.SelectedValue.ToString() != null)
+           // if (comboBoxProvinciaProveedor.SelectedValue.ToString() != null)
             {
              
-            string provincia = comboBoxProvinciaProveedor.DisplayMember.ToString();
+            //string provincia = comboBoxProvinciaProveedor.DisplayMember.ToString();
                 
-                c.CargarComboBoxAnidado(comboBoxLocalidadProveedor, provincia);
+              //  c.CargarComboBoxAnidado(comboBoxLocalidadProveedor, provincia);
                 
 
 
