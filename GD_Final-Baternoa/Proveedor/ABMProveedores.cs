@@ -14,6 +14,11 @@ namespace GD_Final_Baternoa.Proveedor
     public partial class ABMProveedores : Form
     {
         Conexion c = new Conexion();
+        SqlConnection cn;
+        SqlCommand cmd;
+        SqlDataReader dr;
+        SqlCommandBuilder cb;
+        SqlDataAdapter da;
         public ABMProveedores()
         {
             InitializeComponent();
@@ -22,9 +27,10 @@ namespace GD_Final_Baternoa.Proveedor
         private void ABMProveedores_Load(object sender, EventArgs e)
         {
 
-            c.CargarComboBox(comboBoxProvinciaProveedor);
 
-            //c.CargarComboBoxAnidado(comboBoxLocalidadProveedor);
+            CargarComboBox();
+
+           
 
 
         }
@@ -45,24 +51,44 @@ namespace GD_Final_Baternoa.Proveedor
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-           // if (comboBoxProvinciaProveedor.SelectedValue.ToString() != null)
-            {
-             
-            //string provincia = comboBoxProvinciaProveedor.DisplayMember.ToString();
-                
-              //  c.CargarComboBoxAnidado(comboBoxLocalidadProveedor, provincia);
-                
-
-
-
-            }
 
         }
 
+
+    
         private void comboBoxProvinciaProveedor_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            //string provincia = comboBoxProvinciaProveedor.ValueMember;
-            //c.CargarComboBoxAnidado(comboBoxLocalidadProveedor, provincia);
+            
+
+        }
+
+        public void CargarComboBox()
+        {
+           
+            string cad = "Select idProvincia,NombreProvincia from Provincia ";
+            cmd = new SqlCommand(cad, cn);
+            SqlDataAdapter dr = new SqlDataAdapter(cmd);
+            DataTable tbl = new DataTable();
+            dr.Fill(tbl);
+
+            comboBoxProvinciaProveedor.DataSource = tbl;
+            comboBoxProvinciaProveedor.ValueMember = "idProvincia";
+            comboBoxProvinciaProveedor.DisplayMember = "NombreProvincia";
+        }
+
+        public void CargarComboBoxAnidado()
+        {
+            string idProvincia = comboBoxProvinciaProveedor.ValueMember;
+            string cad = "SELECT idLocalidad,NombreLocalidad FROM Localidad WHERE idProvincia = @idProvincia ";
+            cmd = new SqlCommand(cad, cn);
+            cmd.Parameters.AddWithValue("idProvincia", idProvincia);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            comboBoxLocalidadProveedor.DataSource = dt;
+            comboBoxLocalidadProveedor.ValueMember = "idLocalidad";
+            comboBoxLocalidadProveedor.DisplayMember = "NombreLocalidad";
 
         }
     }

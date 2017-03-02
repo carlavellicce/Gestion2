@@ -36,10 +36,6 @@
             this.buttonBuscarP = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelRubro = new System.Windows.Forms.Label();
             this.textBoxRubroP = new System.Windows.Forms.TextBox();
             this.labelTelefono = new System.Windows.Forms.Label();
@@ -52,7 +48,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.comboBoxProvinciaProveedor = new System.Windows.Forms.ComboBox();
             this.comboBoxLocalidadProveedor = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxCUIT
@@ -123,33 +118,6 @@
             this.button5.Text = "Salir";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(59, 313);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(344, 61);
-            this.dataGridView1.TabIndex = 17;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Provincia";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Localidad";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Direccion";
-            this.Column3.Name = "Column3";
-            // 
             // labelRubro
             // 
             this.labelRubro.AutoSize = true;
@@ -202,7 +170,7 @@
             // labelDireccionP
             // 
             this.labelDireccionP.AutoSize = true;
-            this.labelDireccionP.Location = new System.Drawing.Point(44, 189);
+            this.labelDireccionP.Location = new System.Drawing.Point(71, 250);
             this.labelDireccionP.Name = "labelDireccionP";
             this.labelDireccionP.Size = new System.Drawing.Size(52, 13);
             this.labelDireccionP.TabIndex = 24;
@@ -218,7 +186,7 @@
             // labelProvincia
             // 
             this.labelProvincia.AutoSize = true;
-            this.labelProvincia.Location = new System.Drawing.Point(402, 250);
+            this.labelProvincia.Location = new System.Drawing.Point(72, 284);
             this.labelProvincia.Name = "labelProvincia";
             this.labelProvincia.Size = new System.Drawing.Size(51, 13);
             this.labelProvincia.TabIndex = 26;
@@ -227,7 +195,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(402, 285);
+            this.label3.Location = new System.Drawing.Point(70, 320);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 27;
@@ -236,26 +204,28 @@
             // comboBoxProvinciaProveedor
             // 
             this.comboBoxProvinciaProveedor.FormattingEnabled = true;
-            this.comboBoxProvinciaProveedor.Location = new System.Drawing.Point(508, 250);
+            this.comboBoxProvinciaProveedor.Location = new System.Drawing.Point(222, 284);
             this.comboBoxProvinciaProveedor.Name = "comboBoxProvinciaProveedor";
             this.comboBoxProvinciaProveedor.Size = new System.Drawing.Size(121, 21);
             this.comboBoxProvinciaProveedor.TabIndex = 28;
+            this.comboBoxProvinciaProveedor.ValueMember = "idProvincia";
             this.comboBoxProvinciaProveedor.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             this.comboBoxProvinciaProveedor.SelectionChangeCommitted += new System.EventHandler(this.comboBoxProvinciaProveedor_SelectionChangeCommitted);
             // 
             // comboBoxLocalidadProveedor
             // 
             this.comboBoxLocalidadProveedor.FormattingEnabled = true;
-            this.comboBoxLocalidadProveedor.Location = new System.Drawing.Point(508, 276);
+            this.comboBoxLocalidadProveedor.Location = new System.Drawing.Point(222, 320);
             this.comboBoxLocalidadProveedor.Name = "comboBoxLocalidadProveedor";
             this.comboBoxLocalidadProveedor.Size = new System.Drawing.Size(121, 21);
             this.comboBoxLocalidadProveedor.TabIndex = 29;
+            this.comboBoxLocalidadProveedor.ValueMember = "idLocalidad";
             // 
             // ABMProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 528);
+            this.ClientSize = new System.Drawing.Size(677, 606);
             this.Controls.Add(this.comboBoxLocalidadProveedor);
             this.Controls.Add(this.comboBoxProvinciaProveedor);
             this.Controls.Add(this.label3);
@@ -268,7 +238,6 @@
             this.Controls.Add(this.labelTelefono);
             this.Controls.Add(this.textBoxRubroP);
             this.Controls.Add(this.labelRubro);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.buttonBuscarP);
@@ -280,7 +249,6 @@
             this.Name = "ABMProveedores";
             this.Text = "ABMProveedores";
             this.Load += new System.EventHandler(this.ABMProveedores_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -296,14 +264,10 @@
         private System.Windows.Forms.Button buttonBuscarP;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label labelRubro;
         private System.Windows.Forms.TextBox textBoxRubroP;
         private System.Windows.Forms.Label labelTelefono;
         private System.Windows.Forms.TextBox textBoxTelefonoP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.Label labelCorreoP;
         private System.Windows.Forms.TextBox textBoxCorreoP;
         private System.Windows.Forms.Label labelDireccionP;

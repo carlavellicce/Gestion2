@@ -33,7 +33,6 @@ namespace GD_Final_Baternoa.Producto
 
         private void NuevoProducto_Load(object sender, EventArgs e)
         {
-            //aca estaban
 
             c.llenarCombo(comboBoxCategoriaP);
         }
