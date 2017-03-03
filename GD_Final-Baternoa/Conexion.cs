@@ -23,7 +23,7 @@ namespace GD_Final_Baternoa
         {
             try
             {
-                cn = new SqlConnection("Data Source=.;Initial Catalog=Gestion-V2;User ID=sa;Password=12345");
+                cn = new SqlConnection("Data Source =.; Initial Catalog = Gestion - V2; User ID = sa; Password = 12345");
                 cn.Open();
                 MessageBox.Show("Conectado");
             }

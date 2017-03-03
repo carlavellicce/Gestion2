@@ -92,7 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(365, 175);
+            this.ClientSize = new System.Drawing.Size(449, 200);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtUsuario);
@@ -115,6 +115,7 @@
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.BindingSource gestionV2DataSetBindingSource;
     }
 }
 
