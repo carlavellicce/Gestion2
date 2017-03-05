@@ -90,6 +90,7 @@
             this.buttonNuevoP.TabIndex = 12;
             this.buttonNuevoP.Text = "Nuevo";
             this.buttonNuevoP.UseVisualStyleBackColor = true;
+            this.buttonNuevoP.Click += new System.EventHandler(this.buttonNuevoP_Click);
             // 
             // buttonBuscarP
             // 
@@ -162,7 +163,7 @@
             // 
             // textBoxCorreoP
             // 
-            this.textBoxCorreoP.Location = new System.Drawing.Point(227, 215);
+            this.textBoxCorreoP.Location = new System.Drawing.Point(227, 219);
             this.textBoxCorreoP.Name = "textBoxCorreoP";
             this.textBoxCorreoP.Size = new System.Drawing.Size(116, 20);
             this.textBoxCorreoP.TabIndex = 23;
@@ -203,6 +204,7 @@
             // 
             // comboBoxProvinciaProveedor
             // 
+            this.comboBoxProvinciaProveedor.DisplayMember = "idProvincia";
             this.comboBoxProvinciaProveedor.FormattingEnabled = true;
             this.comboBoxProvinciaProveedor.Location = new System.Drawing.Point(222, 284);
             this.comboBoxProvinciaProveedor.Name = "comboBoxProvinciaProveedor";
@@ -210,10 +212,10 @@
             this.comboBoxProvinciaProveedor.TabIndex = 28;
             this.comboBoxProvinciaProveedor.ValueMember = "idProvincia";
             this.comboBoxProvinciaProveedor.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            this.comboBoxProvinciaProveedor.SelectionChangeCommitted += new System.EventHandler(this.comboBoxProvinciaProveedor_SelectionChangeCommitted);
             // 
             // comboBoxLocalidadProveedor
             // 
+            this.comboBoxLocalidadProveedor.DisplayMember = "idLocalidad";
             this.comboBoxLocalidadProveedor.FormattingEnabled = true;
             this.comboBoxLocalidadProveedor.Location = new System.Drawing.Point(222, 320);
             this.comboBoxLocalidadProveedor.Name = "comboBoxLocalidadProveedor";

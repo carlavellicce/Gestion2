@@ -24,14 +24,21 @@ namespace GD_Final_Baternoa.Menu
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            Producto.ABMConsulta ABM = new Producto.ABMConsulta();
-            ABM.Visible = true;
+           
+            Cliente.ABMClientes ABMC = new Cliente.ABMClientes();
+            ABMC.Visible = true;
         }
 
         private void btnProveedores_Click(object sender, EventArgs e)
         {
             Proveedor.ABMProveedores ABMProb = new Proveedor.ABMProveedores();
             ABMProb.Visible = true;
+        }
+
+        private void btnEmpleados_Click(object sender, EventArgs e)
+        {
+            Empleado.ABMEmpleados ABME = new Empleado.ABMEmpleados();
+            ABME.Visible = true;
         }
     }
 }

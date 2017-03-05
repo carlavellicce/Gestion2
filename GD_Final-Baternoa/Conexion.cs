@@ -15,15 +15,15 @@ namespace GD_Final_Baternoa
     {
         SqlConnection cn;
         SqlCommand cmd;
-        SqlDataReader dr;
-        SqlCommandBuilder cb;
-        SqlDataAdapter da;
+        //SqlDataReader dr;
+        //SqlCommandBuilder cb;
+        //SqlDataAdapter da;
 
         public Conexion()
         {
             try
             {
-                cn = new SqlConnection("Data Source =.; Initial Catalog = Gestion - V2; User ID = sa; Password = 12345");
+                cn = new SqlConnection("Data Source=.;Initial Catalog=Gestion-V2;Persist Security Info=True;User ID=sa;Password=12345");
                 cn.Open();
                 MessageBox.Show("Conectado");
             }

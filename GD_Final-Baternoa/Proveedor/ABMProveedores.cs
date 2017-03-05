@@ -15,7 +15,7 @@ namespace GD_Final_Baternoa.Proveedor
     {
         Conexion c = new Conexion();
 
-        SqlConnection con = new SqlConnection("Data Source =.; Initial Catalog = Gestion - V2; User ID = sa; Password = 12345");
+        SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=Gestion-V2;Persist Security Info=True;User ID=sa;Password=12345");
 
         public ABMProveedores()
         {
@@ -26,12 +26,12 @@ namespace GD_Final_Baternoa.Proveedor
 
         public void cargarProvincias()
         {
-            con.Open();
+            //con.Open();
             SqlCommand cmd = new SqlCommand("SELECT IdProvincia,NombreProvincia FROM provincia", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
-            con.Close();
+            //con.Close();
 
             DataRow fila = dt.NewRow();
             fila["NombreProvincia"] = "Selecciona una Provincia";
@@ -45,13 +45,13 @@ namespace GD_Final_Baternoa.Proveedor
 
         public void cargarLocalidad(string IdProvincia)
         {
-            con.Open();
+           // con.Open();
             SqlCommand cmd = new SqlCommand("SELECT IdLocalidad,NombreLocalidad FROM localidad WHERE IdProvincia = @IdProvincia", con);
             cmd.Parameters.AddWithValue("IdProvincia", IdProvincia);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
-            con.Close();
+            //con.Close();
 
             DataRow dr = dt.NewRow();
             dr["NombreLocalidad"] = "Selecciona una Localidad";
@@ -61,15 +61,10 @@ namespace GD_Final_Baternoa.Proveedor
             comboBoxLocalidadProveedor.DisplayMember = "NombreLocalidad";
             comboBoxLocalidadProveedor.DataSource = dt;
 
-
-
-
         }
 
         private void ABMProveedores_Load(object sender, EventArgs e)
         {
-
-
 
 
         }
@@ -92,31 +87,18 @@ namespace GD_Final_Baternoa.Proveedor
         {
             if (comboBoxProvinciaProveedor.SelectedValue.ToString() != null)
             {
-               
+                string IdProvincia = comboBoxProvinciaProveedor.SelectedValue.ToString();
+                cargarLocalidad(IdProvincia);
 
-            }
-
-
-
-            // if (comboBoxProvinciaProveedor.SelectedValue.ToString() != null)
-            {
-             
-            //string provincia = comboBoxProvinciaProveedor.DisplayMember.ToString();
-                
-              //  c.CargarComboBoxAnidado(comboBoxLocalidadProveedor, provincia);
-                
-
-
-
-            }
+            }        
 
         }
 
-        private void comboBoxProvinciaProveedor_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            //string provincia = comboBoxProvinciaProveedor.ValueMember;
-            //c.CargarComboBoxAnidado(comboBoxLocalidadProveedor, provincia);
 
+        private void buttonNuevoP_Click(object sender, EventArgs e)
+        {
+            
+                           
         }
     }
 }

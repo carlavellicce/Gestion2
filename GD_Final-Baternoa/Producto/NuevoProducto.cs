@@ -34,7 +34,7 @@ namespace GD_Final_Baternoa.Producto
         private void NuevoProducto_Load(object sender, EventArgs e)
         {
 
-            c.llenarCombo(comboBoxCategoriaP);
+            
         }
 
         private void comboBoxCategoriaP_SelectedIndexChanged(object sender, EventArgs e)
