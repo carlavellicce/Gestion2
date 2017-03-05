@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxCalleCliente = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,6 +46,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.comboBoxProvinciaCliente = new System.Windows.Forms.ComboBox();
             this.comboBoxLocalidadCliente = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBoxNumeroCalle = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -55,12 +57,12 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
             // 
-            // textBox2
+            // textBoxCalleCliente
             // 
-            this.textBox2.Location = new System.Drawing.Point(144, 123);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.textBoxCalleCliente.Location = new System.Drawing.Point(144, 123);
+            this.textBoxCalleCliente.Name = "textBoxCalleCliente";
+            this.textBoxCalleCliente.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCalleCliente.TabIndex = 1;
             // 
             // textBox3
             // 
@@ -83,9 +85,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(28, 126);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.Size = new System.Drawing.Size(30, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Dirección";
+            this.label2.Text = "Calle";
             // 
             // label3
             // 
@@ -202,11 +204,29 @@
             this.comboBoxLocalidadCliente.Size = new System.Drawing.Size(121, 21);
             this.comboBoxLocalidadCliente.TabIndex = 17;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(277, 126);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(44, 13);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "Numero";
+            // 
+            // textBoxNumeroCalle
+            // 
+            this.textBoxNumeroCalle.Location = new System.Drawing.Point(332, 123);
+            this.textBoxNumeroCalle.Name = "textBoxNumeroCalle";
+            this.textBoxNumeroCalle.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNumeroCalle.TabIndex = 19;
+            // 
             // ABMClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(444, 374);
+            this.Controls.Add(this.textBoxNumeroCalle);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.comboBoxLocalidadCliente);
             this.Controls.Add(this.comboBoxProvinciaCliente);
             this.Controls.Add(this.label6);
@@ -223,7 +243,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxCalleCliente);
             this.Controls.Add(this.textBox1);
             this.Name = "ABMClientes";
             this.Text = "ABMCliente";
@@ -236,7 +256,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxCalleCliente;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -253,5 +273,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comboBoxProvinciaCliente;
         private System.Windows.Forms.ComboBox comboBoxLocalidadCliente;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBoxNumeroCalle;
     }
 }

@@ -44,15 +44,16 @@ namespace GD_Final_Baternoa
 
         public bool insertar(string sql)
         {
-            cn.Open();
+            //cn.Open();
             cmd = new SqlCommand(sql,cn);
             int i = cmd.ExecuteNonQuery();
             if (i > 0)
             {
+                cn.Close();
                 return true;
             }
             else { return false; }
-
+            
         }
     }
 }
