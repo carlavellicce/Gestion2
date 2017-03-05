@@ -43,7 +43,7 @@ namespace GD_Final_Baternoa.Empleado
         public void cargarLocalidad(string IdProvincia)
         {
             // con.Open();
-            SqlCommand cmd = new SqlCommand("SELECT IdLocalidad,NombreLocalidad FROM localidad WHERE IdProvincia = @IdProvincia", con);
+            SqlCommand cmd = new SqlCommand("SELECT IdLocalidad,NombreLocalidad FROM localidad WHERE idProvincia = @IdProvincia", con);
             cmd.Parameters.AddWithValue("IdProvincia", IdProvincia);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -79,5 +79,27 @@ namespace GD_Final_Baternoa.Empleado
 
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string sql = "INSERT into Domicilio (Calle, Numero,idlocalidad) values('"+textBoxCalle.Text +"',"+ Convert.ToInt32(textBoxNumeroCalle.Text)+","+comboBoxLocalidadEmpleado.ValueMember +")";
+            if (c.insertar(sql))
+            {
+               // int idDomic =;
+                    MessageBox.Show("Registro insertado");
+            }
+            else { MessageBox.Show("Error No se incerto el registro"); }
+
+            string consulta = "SELECT idDomicilio from Domicilio WHERE  Calle = '" + textBoxCalle.Text + "' AND Numero = " + Convert.ToInt32(textBoxNumeroCalle.Text) + " AND idLocalidad = " + comboBoxLocalidadEmpleado.ValueMember + "";
+            SqlCommand sqlc = new SqlCommand(consulta,con);
+            con.Open();
+            SqlDataReader res = sqlc.ExecuteReader();
+            while (res.Read())
+            {
+                int iddom = res.GetInt32(0);
+            }
+            con.Close();
+        }
+
     }
 }
