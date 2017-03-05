@@ -14,12 +14,13 @@ namespace GD_Final_Baternoa.Cliente
     public partial class ABMClientes : Form
     {
         Conexion c = new Conexion();
-
-        SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=Gestion-V2;Persist Security Info=True;User ID=sa;Password=12345");
+        
+        SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=Gestion-V2;Integrated Security=True");
         public ABMClientes()
         {
             InitializeComponent();
             cargarProvincias();
+            
         }
 
         public void cargarProvincias()
@@ -78,6 +79,26 @@ namespace GD_Final_Baternoa.Cliente
 
         private void ABMClientes_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnGrabar_Click(object sender, EventArgs e)
+        {
+            string calle = textBoxCalleCliente.Text;
+            int num = int.Parse(textBoxNumeroCalle.Text);
+            int local = Convert.ToInt32(comboBoxLocalidadCliente.SelectedValue);
+
+            string sql = "INSERT INTO Domicilio (Calle, Numero, idLocalidad) VALUES ('" + calle + "'," + num + "," + local + ")";
+            if (c.insertar(sql))
+            {
+                MessageBox.Show("Registro insertado");
+            }
+            else
+            {
+                MessageBox.Show("Error No se incerto el registro");
+            }
+
+
 
         }
     }

@@ -23,7 +23,7 @@ namespace GD_Final_Baternoa
         {
             try
             {
-                cn = new SqlConnection("Data Source=.;Initial Catalog=Gestion-V2;Persist Security Info=True;User ID=sa;Password=12345");
+                cn = new SqlConnection("Data Source=.;Initial Catalog=Gestion-V2;Integrated Security=True");
                 cn.Open();
                 MessageBox.Show("Conectado");
             }
@@ -49,7 +49,7 @@ namespace GD_Final_Baternoa
             int i = cmd.ExecuteNonQuery();
             if (i > 0)
             {
-                cn.Close();
+                //cn.Close();
                 return true;
             }
             else { return false; }
