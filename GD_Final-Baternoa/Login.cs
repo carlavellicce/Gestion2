@@ -7,17 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace GD_Final_Baternoa
 {
     public partial class Login : Form
     {
+      
         public Login()
         {
             InitializeComponent();
-            Conexion c = new Conexion();
+
+
         }
 
+      
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -38,7 +42,16 @@ namespace GD_Final_Baternoa
 
         private void Login_Load(object sender, EventArgs e)
         {
-            Conexion c = new Conexion();
+           Conexion c = new Conexion();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
         }
     }
 }
