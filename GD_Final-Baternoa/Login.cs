@@ -53,5 +53,10 @@ namespace GD_Final_Baternoa
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

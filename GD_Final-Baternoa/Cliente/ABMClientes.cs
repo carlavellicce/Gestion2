@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
+
+
 namespace GD_Final_Baternoa.Cliente
 {
     public partial class ABMClientes : Form
@@ -78,7 +81,73 @@ namespace GD_Final_Baternoa.Cliente
 
         private void ABMClientes_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private void btnNuevo_Click(object sender, EventArgs e)
+
+        {
+            
+           string calle = textBoxCalleCliente.Text;
+           int num = int.Parse(textBoxNumeroCalle.Text);
+           int local = Convert.ToInt32(comboBoxLocalidadCliente.SelectedValue);
+           int dni = Convert.ToInt32(textBoxDNICliente.Text);
+           string nombre = textBoxNombreCliente.Text;
+           string telefono = textBoxTelefono.Text;
+
+           string sql = "INSERT INTO Domicilio (Calle, Numero, idLocalidad) VALUES ('" + calle + "'," + num + "," + local + ") SELECT SCOPE_IDENTITY();";
+           con.Open();
+           SqlCommand cmd = new SqlCommand(sql);
+           cmd.CommandType = System.Data.CommandType.Text;
+           cmd.Connection = con;
+           SqlDataReader reader = cmd.ExecuteReader();
+           reader.Read();
+           string idDom = reader[0].ToString();
+           con.Close();
+
+          /* if (c.insertar(sql))
+           {
+               MessageBox.Show("Registro insertado");
+                MessageBox.Show("id: " +idDom);   
+            }
+           
+           else
+           {
+               MessageBox.Show("Error No se incerto el registro");
+           }
+           */
+            con.Open();
+           
+           
+            string sql2 = "INSERT INTO Cliente (DNICliente, ApellidoyNombre, Telefono, idDomicilio) VALUES (" + dni + ",'" + nombre + "','" + telefono + "'," + idDom + ")";
+            SqlCommand cmd1 = new SqlCommand(sql2);
+            cmd1.CommandType = System.Data.CommandType.Text;
+            cmd1.Connection = con;
+            con.Close();
+
+            if (c.insertar(sql2))
+            {
+                MessageBox.Show("Registro insertado");
+            }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
+      
+   
 }
+
+
+
+
+
+
+
+
+    
+
+    
+

@@ -104,6 +104,7 @@
             this.btnSalir.TabIndex = 7;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnProductos
             // 
@@ -113,6 +114,7 @@
             this.btnProductos.TabIndex = 8;
             this.btnProductos.Text = "Gestión Productos";
             this.btnProductos.UseVisualStyleBackColor = true;
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
             // MenuPrincipal
             // 

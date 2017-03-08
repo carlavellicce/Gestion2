@@ -97,8 +97,37 @@ namespace GD_Final_Baternoa.Proveedor
 
         private void buttonNuevoP_Click(object sender, EventArgs e)
         {
-            
-                           
+            string calle = textBoxDireccionP.Text;
+            int num = int.Parse(textBoxNumero.Text);
+            int local = Convert.ToInt32(comboBoxLocalidadProveedor.SelectedValue);
+            string cuit = textBoxCUIT.Text;
+            string razon = textBoxRazonSocial.Text;
+            string rubro = textBoxRubroP.Text;
+            string telefono = textBoxTelefonoP.Text;
+            string correo = textBoxCorreoP.Text;
+
+            string sql = "INSERT INTO Domicilio (Calle, Numero, idLocalidad) VALUES ('" + calle + "'," + num + "," + local + ") SELECT SCOPE_IDENTITY();";
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql);
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.Connection = con;
+            SqlDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            string idDom = reader[0].ToString();
+            con.Close();
+
+            con.Open();
+            string sql2 = "INSERT INTO Proveedor (CUITProveedor, RazonSocial, Rubro, Telefono, CorreoElectronico, idDomicilio) VALUES ('" + cuit + "','" + razon + "','" + rubro + "','" + telefono + "','" + correo + "',"+idDom+")";
+            SqlCommand cmd1 = new SqlCommand(sql2);
+            cmd1.CommandType = System.Data.CommandType.Text;
+            cmd1.Connection = con;
+            con.Close();
+
+            if (c.insertar(sql2))
+            {
+                MessageBox.Show("Registro insertado");
+            }
+
         }
     }
 }

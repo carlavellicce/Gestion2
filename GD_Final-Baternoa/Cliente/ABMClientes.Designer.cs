@@ -28,20 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxNombreCliente = new System.Windows.Forms.TextBox();
             this.textBoxCalleCliente = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxTelefono = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnGrabar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.btnModificar = new System.Windows.Forms.Button();
-            this.btnBorrar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxDNICliente = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBoxProvinciaCliente = new System.Windows.Forms.ComboBox();
@@ -50,26 +46,26 @@
             this.textBoxNumeroCalle = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBoxNombreCliente
             // 
-            this.textBox1.Location = new System.Drawing.Point(144, 47);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.textBoxNombreCliente.Location = new System.Drawing.Point(144, 47);
+            this.textBoxNombreCliente.Name = "textBoxNombreCliente";
+            this.textBoxNombreCliente.Size = new System.Drawing.Size(121, 20);
+            this.textBoxNombreCliente.TabIndex = 0;
             // 
             // textBoxCalleCliente
             // 
             this.textBoxCalleCliente.Location = new System.Drawing.Point(144, 123);
             this.textBoxCalleCliente.Name = "textBoxCalleCliente";
-            this.textBoxCalleCliente.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCalleCliente.Size = new System.Drawing.Size(121, 20);
             this.textBoxCalleCliente.TabIndex = 1;
             // 
-            // textBox3
+            // textBoxTelefono
             // 
-            this.textBox3.Location = new System.Drawing.Point(144, 165);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
+            this.textBoxTelefono.Location = new System.Drawing.Point(144, 165);
+            this.textBoxTelefono.Name = "textBoxTelefono";
+            this.textBoxTelefono.Size = new System.Drawing.Size(121, 20);
+            this.textBoxTelefono.TabIndex = 2;
             // 
             // label1
             // 
@@ -98,59 +94,25 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Teléfono";
             // 
-            // btnGrabar
-            // 
-            this.btnGrabar.Location = new System.Drawing.Point(337, 162);
-            this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(75, 23);
-            this.btnGrabar.TabIndex = 6;
-            this.btnGrabar.Text = "Grabar";
-            this.btnGrabar.UseVisualStyleBackColor = true;
-            // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(34, 289);
+            this.btnNuevo.Location = new System.Drawing.Point(107, 290);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(75, 23);
             this.btnNuevo.TabIndex = 7;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Location = new System.Drawing.Point(135, 289);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 8;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            // 
-            // btnModificar
-            // 
-            this.btnModificar.Location = new System.Drawing.Point(226, 289);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(75, 23);
-            this.btnModificar.TabIndex = 9;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = true;
-            // 
-            // btnBorrar
-            // 
-            this.btnBorrar.Location = new System.Drawing.Point(337, 289);
-            this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(75, 23);
-            this.btnBorrar.TabIndex = 10;
-            this.btnBorrar.Text = "Borrar";
-            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(357, 339);
+            this.btnSalir.Location = new System.Drawing.Point(280, 290);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 11;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // label4
             // 
@@ -161,12 +123,12 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "DNI";
             // 
-            // textBox4
+            // textBoxDNICliente
             // 
-            this.textBox4.Location = new System.Drawing.Point(144, 84);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 13;
+            this.textBoxDNICliente.Location = new System.Drawing.Point(144, 84);
+            this.textBoxDNICliente.Name = "textBoxDNICliente";
+            this.textBoxDNICliente.Size = new System.Drawing.Size(121, 20);
+            this.textBoxDNICliente.TabIndex = 13;
             // 
             // label5
             // 
@@ -217,7 +179,7 @@
             // 
             this.textBoxNumeroCalle.Location = new System.Drawing.Point(332, 123);
             this.textBoxNumeroCalle.Name = "textBoxNumeroCalle";
-            this.textBoxNumeroCalle.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNumeroCalle.Size = new System.Drawing.Size(65, 20);
             this.textBoxNumeroCalle.TabIndex = 19;
             // 
             // ABMClientes
@@ -231,20 +193,16 @@
             this.Controls.Add(this.comboBoxProvinciaCliente);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBoxDNICliente);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.btnBorrar);
-            this.Controls.Add(this.btnModificar);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnNuevo);
-            this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBoxTelefono);
             this.Controls.Add(this.textBoxCalleCliente);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxNombreCliente);
             this.Name = "ABMClientes";
             this.Text = "ABMCliente";
             this.Load += new System.EventHandler(this.ABMClientes_Load);
@@ -255,20 +213,16 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxNombreCliente;
         private System.Windows.Forms.TextBox textBoxCalleCliente;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxTelefono;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnGrabar;
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.Button btnModificar;
-        private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxDNICliente;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comboBoxProvinciaCliente;

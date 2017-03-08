@@ -67,6 +67,12 @@
     <Compile Include="Cliente\ABMClientes.Designer.cs">
       <DependentUpon>ABMClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cliente\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conexion.cs" />
     <Compile Include="Empleado\ABMEmpleados.cs">
       <SubType>Form</SubType>
@@ -136,6 +142,12 @@
     <Compile Include="Proveedor\ABMProveedores.Designer.cs">
       <DependentUpon>ABMProveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Proveedor\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedor\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Venta\PantallaVenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +161,9 @@
     </Compile>
     <EmbeddedResource Include="Cliente\ABMClientes.resx">
       <DependentUpon>ABMClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empleado\ABMEmpleados.resx">
       <DependentUpon>ABMEmpleados.cs</DependentUpon>
@@ -191,6 +206,9 @@
     </Compile>
     <EmbeddedResource Include="Proveedor\ABMProveedores.resx">
       <DependentUpon>ABMProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedor\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Venta\PantallaVenta.resx">
       <DependentUpon>PantallaVenta.cs</DependentUpon>

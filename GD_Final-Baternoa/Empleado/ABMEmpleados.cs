@@ -82,8 +82,8 @@ namespace GD_Final_Baternoa.Empleado
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string sql = "INSERT into Domicilio (Calle, Numero,idlocalidad) values('"+textBoxCalle.Text +"',"+ Convert.ToInt32(textBoxNumeroCalle.Text)+","+comboBoxLocalidadEmpleado.ValueMember +")";
-            if (c.insertar(sql))
+            /* string sql = "INSERT into Domicilio (Calle, Numero,idlocalidad) values('"+textBoxCalle.Text +"',"+ Convert.ToInt32(textBoxNumeroCalle.Text)+","+comboBoxLocalidadEmpleado.ValueMember +")";
+           if (c.insertar(sql))
             {
                // int idDomic =;
                     MessageBox.Show("Registro insertado");
@@ -99,7 +99,13 @@ namespace GD_Final_Baternoa.Empleado
                 int iddom = res.GetInt32(0);
             }
             con.Close();
+            */
+            
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

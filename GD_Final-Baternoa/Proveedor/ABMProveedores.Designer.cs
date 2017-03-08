@@ -33,8 +33,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonNuevoP = new System.Windows.Forms.Button();
-            this.buttonBuscarP = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.labelRubro = new System.Windows.Forms.Label();
             this.textBoxRubroP = new System.Windows.Forms.TextBox();
@@ -48,6 +46,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.comboBoxProvinciaProveedor = new System.Windows.Forms.ComboBox();
             this.comboBoxLocalidadProveedor = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBoxNumero = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBoxCUIT
@@ -84,7 +84,7 @@
             // 
             // buttonNuevoP
             // 
-            this.buttonNuevoP.Location = new System.Drawing.Point(227, 455);
+            this.buttonNuevoP.Location = new System.Drawing.Point(154, 394);
             this.buttonNuevoP.Name = "buttonNuevoP";
             this.buttonNuevoP.Size = new System.Drawing.Size(100, 23);
             this.buttonNuevoP.TabIndex = 12;
@@ -92,27 +92,9 @@
             this.buttonNuevoP.UseVisualStyleBackColor = true;
             this.buttonNuevoP.Click += new System.EventHandler(this.buttonNuevoP_Click);
             // 
-            // buttonBuscarP
-            // 
-            this.buttonBuscarP.Location = new System.Drawing.Point(391, 59);
-            this.buttonBuscarP.Name = "buttonBuscarP";
-            this.buttonBuscarP.Size = new System.Drawing.Size(100, 23);
-            this.buttonBuscarP.TabIndex = 14;
-            this.buttonBuscarP.Text = "Buscar";
-            this.buttonBuscarP.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(47, 455);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(103, 23);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "Modificar";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(405, 455);
+            this.button5.Location = new System.Drawing.Point(414, 394);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(100, 23);
             this.button5.TabIndex = 16;
@@ -122,7 +104,7 @@
             // labelRubro
             // 
             this.labelRubro.AutoSize = true;
-            this.labelRubro.Location = new System.Drawing.Point(70, 154);
+            this.labelRubro.Location = new System.Drawing.Point(72, 133);
             this.labelRubro.Name = "labelRubro";
             this.labelRubro.Size = new System.Drawing.Size(36, 13);
             this.labelRubro.TabIndex = 18;
@@ -130,7 +112,7 @@
             // 
             // textBoxRubroP
             // 
-            this.textBoxRubroP.Location = new System.Drawing.Point(227, 147);
+            this.textBoxRubroP.Location = new System.Drawing.Point(227, 126);
             this.textBoxRubroP.Name = "textBoxRubroP";
             this.textBoxRubroP.Size = new System.Drawing.Size(116, 20);
             this.textBoxRubroP.TabIndex = 19;
@@ -138,7 +120,7 @@
             // labelTelefono
             // 
             this.labelTelefono.AutoSize = true;
-            this.labelTelefono.Location = new System.Drawing.Point(71, 189);
+            this.labelTelefono.Location = new System.Drawing.Point(70, 167);
             this.labelTelefono.Name = "labelTelefono";
             this.labelTelefono.Size = new System.Drawing.Size(49, 13);
             this.labelTelefono.TabIndex = 20;
@@ -147,7 +129,7 @@
             // 
             // textBoxTelefonoP
             // 
-            this.textBoxTelefonoP.Location = new System.Drawing.Point(227, 182);
+            this.textBoxTelefonoP.Location = new System.Drawing.Point(227, 164);
             this.textBoxTelefonoP.Name = "textBoxTelefonoP";
             this.textBoxTelefonoP.Size = new System.Drawing.Size(116, 20);
             this.textBoxTelefonoP.TabIndex = 21;
@@ -155,7 +137,7 @@
             // labelCorreoP
             // 
             this.labelCorreoP.AutoSize = true;
-            this.labelCorreoP.Location = new System.Drawing.Point(71, 222);
+            this.labelCorreoP.Location = new System.Drawing.Point(71, 201);
             this.labelCorreoP.Name = "labelCorreoP";
             this.labelCorreoP.Size = new System.Drawing.Size(38, 13);
             this.labelCorreoP.TabIndex = 22;
@@ -163,7 +145,7 @@
             // 
             // textBoxCorreoP
             // 
-            this.textBoxCorreoP.Location = new System.Drawing.Point(227, 219);
+            this.textBoxCorreoP.Location = new System.Drawing.Point(227, 201);
             this.textBoxCorreoP.Name = "textBoxCorreoP";
             this.textBoxCorreoP.Size = new System.Drawing.Size(116, 20);
             this.textBoxCorreoP.TabIndex = 23;
@@ -171,7 +153,7 @@
             // labelDireccionP
             // 
             this.labelDireccionP.AutoSize = true;
-            this.labelDireccionP.Location = new System.Drawing.Point(71, 250);
+            this.labelDireccionP.Location = new System.Drawing.Point(70, 226);
             this.labelDireccionP.Name = "labelDireccionP";
             this.labelDireccionP.Size = new System.Drawing.Size(52, 13);
             this.labelDireccionP.TabIndex = 24;
@@ -179,7 +161,7 @@
             // 
             // textBoxDireccionP
             // 
-            this.textBoxDireccionP.Location = new System.Drawing.Point(227, 247);
+            this.textBoxDireccionP.Location = new System.Drawing.Point(227, 243);
             this.textBoxDireccionP.Name = "textBoxDireccionP";
             this.textBoxDireccionP.Size = new System.Drawing.Size(116, 20);
             this.textBoxDireccionP.TabIndex = 25;
@@ -187,7 +169,7 @@
             // labelProvincia
             // 
             this.labelProvincia.AutoSize = true;
-            this.labelProvincia.Location = new System.Drawing.Point(72, 284);
+            this.labelProvincia.Location = new System.Drawing.Point(72, 270);
             this.labelProvincia.Name = "labelProvincia";
             this.labelProvincia.Size = new System.Drawing.Size(51, 13);
             this.labelProvincia.TabIndex = 26;
@@ -196,7 +178,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(70, 320);
+            this.label3.Location = new System.Drawing.Point(70, 311);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 27;
@@ -223,11 +205,29 @@
             this.comboBoxLocalidadProveedor.TabIndex = 29;
             this.comboBoxLocalidadProveedor.ValueMember = "idLocalidad";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(388, 250);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "Numero";
+            // 
+            // textBoxNumero
+            // 
+            this.textBoxNumero.Location = new System.Drawing.Point(438, 247);
+            this.textBoxNumero.Name = "textBoxNumero";
+            this.textBoxNumero.Size = new System.Drawing.Size(76, 20);
+            this.textBoxNumero.TabIndex = 31;
+            // 
             // ABMProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(677, 606);
+            this.Controls.Add(this.textBoxNumero);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBoxLocalidadProveedor);
             this.Controls.Add(this.comboBoxProvinciaProveedor);
             this.Controls.Add(this.label3);
@@ -241,8 +241,6 @@
             this.Controls.Add(this.textBoxRubroP);
             this.Controls.Add(this.labelRubro);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.buttonBuscarP);
             this.Controls.Add(this.buttonNuevoP);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -263,8 +261,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonNuevoP;
-        private System.Windows.Forms.Button buttonBuscarP;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label labelRubro;
         private System.Windows.Forms.TextBox textBoxRubroP;
@@ -278,5 +274,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBoxProvinciaProveedor;
         private System.Windows.Forms.ComboBox comboBoxLocalidadProveedor;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBoxNumero;
     }
 }
