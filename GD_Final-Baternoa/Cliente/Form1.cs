@@ -44,5 +44,10 @@ namespace GD_Final_Baternoa.Cliente
             con.Open();
             SqlCommand cmd = new SqlCommand(sql);
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -36,11 +36,12 @@
             this.btnLiquidacion = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnProveedores
             // 
-            this.btnProveedores.Location = new System.Drawing.Point(141, 41);
+            this.btnProveedores.Location = new System.Drawing.Point(218, 41);
             this.btnProveedores.Name = "btnProveedores";
             this.btnProveedores.Size = new System.Drawing.Size(141, 35);
             this.btnProveedores.TabIndex = 0;
@@ -50,7 +51,7 @@
             // 
             // btnClientes
             // 
-            this.btnClientes.Location = new System.Drawing.Point(288, 41);
+            this.btnClientes.Location = new System.Drawing.Point(435, 41);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(143, 35);
             this.btnClientes.TabIndex = 1;
@@ -60,7 +61,7 @@
             // 
             // btnEmpleados
             // 
-            this.btnEmpleados.Location = new System.Drawing.Point(437, 41);
+            this.btnEmpleados.Location = new System.Drawing.Point(108, 96);
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.Size = new System.Drawing.Size(141, 35);
             this.btnEmpleados.TabIndex = 3;
@@ -70,7 +71,7 @@
             // 
             // btnCompra
             // 
-            this.btnCompra.Location = new System.Drawing.Point(100, 150);
+            this.btnCompra.Location = new System.Drawing.Point(99, 190);
             this.btnCompra.Name = "btnCompra";
             this.btnCompra.Size = new System.Drawing.Size(102, 63);
             this.btnCompra.TabIndex = 4;
@@ -79,7 +80,7 @@
             // 
             // btnVenta
             // 
-            this.btnVenta.Location = new System.Drawing.Point(242, 150);
+            this.btnVenta.Location = new System.Drawing.Point(240, 189);
             this.btnVenta.Name = "btnVenta";
             this.btnVenta.Size = new System.Drawing.Size(97, 64);
             this.btnVenta.TabIndex = 5;
@@ -88,7 +89,7 @@
             // 
             // btnLiquidacion
             // 
-            this.btnLiquidacion.Location = new System.Drawing.Point(378, 148);
+            this.btnLiquidacion.Location = new System.Drawing.Point(377, 189);
             this.btnLiquidacion.Name = "btnLiquidacion";
             this.btnLiquidacion.Size = new System.Drawing.Size(95, 65);
             this.btnLiquidacion.TabIndex = 6;
@@ -116,11 +117,21 @@
             this.btnProductos.UseVisualStyleBackColor = true;
             this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(331, 96);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(141, 35);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Gestión Categorias";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(613, 321);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnProductos);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnLiquidacion);
@@ -145,5 +156,6 @@
         private System.Windows.Forms.Button btnLiquidacion;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnProductos;
+        private System.Windows.Forms.Button button1;
     }
 }

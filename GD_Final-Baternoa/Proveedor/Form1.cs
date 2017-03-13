@@ -33,5 +33,10 @@ namespace GD_Final_Baternoa.Proveedor
             ABMP.Visible = true;
 
         }
+
+        private void buttonBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

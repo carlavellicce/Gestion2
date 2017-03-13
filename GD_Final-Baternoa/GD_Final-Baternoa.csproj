@@ -61,6 +61,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Categoria\CategoriaEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categoria\CategoriaEmpleado.Designer.cs">
+      <DependentUpon>CategoriaEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categoria\CategoriaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categoria\CategoriaProducto.Designer.cs">
+      <DependentUpon>CategoriaProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cliente\ABMClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +171,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_Gestion_V2DataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Categoria\CategoriaEmpleado.resx">
+      <DependentUpon>CategoriaEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categoria\CategoriaProducto.resx">
+      <DependentUpon>CategoriaProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cliente\ABMClientes.resx">
       <DependentUpon>ABMClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -249,6 +267,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

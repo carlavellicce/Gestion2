@@ -48,3 +48,5 @@ C:\Users\EmyLavenia\Source\Repos\Gestion23\GD_Final-Baternoa\obj\Debug\GD_Final_
 C:\Users\EmyLavenia\Source\Repos\Gestion23\GD_Final-Baternoa\obj\Debug\GD_Final-Baternoa.csproj.GenerateResource.Cache
 C:\Users\adm\Source\Repos\Gestion33\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Cliente.ABMCLienteConsulta.resources
 C:\Users\adm\Source\Repos\Gestion33\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Proveedor.ABMProveedorConsulta.resources
+C:\Users\adm\Source\Repos\Gestion33\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Categoria.CategoriaEmpleado.resources
+C:\Users\adm\Source\Repos\Gestion33\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Categoria.CategoriaProducto.resources
