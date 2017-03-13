@@ -51,3 +51,6 @@ C:\Users\adm\Source\Repos\Gestion33\GD_Final-Baternoa\obj\Debug\GD_Final_Baterno
 C:\Users\adm\Source\Repos\Gestion33\Gestion2-master\Gestion2-master\GD_Final-Baternoa\bin\Debug\GD_Final-Baternoa.exe.config
 C:\Users\adm\Source\Repos\Gestion33\Gestion2-master\Gestion2-master\GD_Final-Baternoa\obj\Debug\GD_Final-Baternoa.exe
 C:\Users\adm\Source\Repos\Gestion33\Gestion2-master\Gestion2-master\GD_Final-Baternoa\obj\Debug\GD_Final-Baternoa.pdb
+C:\Users\Carla\Source\Repos\Gestion23\Gestion2-master\Gestion2-master\GD_Final-Baternoa\bin\Debug\GD_Final-Baternoa.exe.config
+C:\Users\Carla\Source\Repos\Gestion23\Gestion2-master\Gestion2-master\GD_Final-Baternoa\obj\Debug\GD_Final-Baternoa.exe
+C:\Users\Carla\Source\Repos\Gestion23\Gestion2-master\Gestion2-master\GD_Final-Baternoa\obj\Debug\GD_Final-Baternoa.pdb
