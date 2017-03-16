@@ -73,30 +73,24 @@
     <Compile Include="Categoria\CategoriaProducto.Designer.cs">
       <DependentUpon>CategoriaProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cliente\ABMClientes.cs">
+    <Compile Include="Categoria\CategoriasPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cliente\ABMClientes.Designer.cs">
-      <DependentUpon>ABMClientes.cs</DependentUpon>
+    <Compile Include="Categoria\CategoriasPrincipal.Designer.cs">
+      <DependentUpon>CategoriasPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cliente\Form1.cs">
+    <Compile Include="Cliente\Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cliente\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Cliente\Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
-    <Compile Include="Empleado\ABMEmpleados.cs">
+    <Compile Include="Empleado\Empleados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empleado\ABMEmpleados.Designer.cs">
-      <DependentUpon>ABMEmpleados.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Empleado\ABMFamiliar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Empleado\ABMFamiliar.Designer.cs">
-      <DependentUpon>ABMFamiliar.cs</DependentUpon>
+    <Compile Include="Empleado\Empleados.Designer.cs">
+      <DependentUpon>Empleados.cs</DependentUpon>
     </Compile>
     <Compile Include="Liquidacion\AdminConceptos.cs">
       <SubType>Form</SubType>
@@ -134,31 +128,19 @@
     <Compile Include="Menu\MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Producto\ABMConsulta.cs">
+    <Compile Include="Producto\Productos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Producto\ABMConsulta.Designer.cs">
-      <DependentUpon>ABMConsulta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Producto\NuevoProducto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Producto\NuevoProducto.Designer.cs">
-      <DependentUpon>NuevoProducto.cs</DependentUpon>
+    <Compile Include="Producto\Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Proveedor\ABMProveedores.cs">
+    <Compile Include="Proveedor\Proveedores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Proveedor\ABMProveedores.Designer.cs">
-      <DependentUpon>ABMProveedores.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Proveedor\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Proveedor\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Proveedor\Proveedores.Designer.cs">
+      <DependentUpon>Proveedores.cs</DependentUpon>
     </Compile>
     <Compile Include="Venta\PantallaVenta.cs">
       <SubType>Form</SubType>
@@ -177,17 +159,14 @@
     <EmbeddedResource Include="Categoria\CategoriaProducto.resx">
       <DependentUpon>CategoriaProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cliente\ABMClientes.resx">
-      <DependentUpon>ABMClientes.cs</DependentUpon>
+    <EmbeddedResource Include="Categoria\CategoriasPrincipal.resx">
+      <DependentUpon>CategoriasPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cliente\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Cliente\Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empleado\ABMEmpleados.resx">
-      <DependentUpon>ABMEmpleados.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Empleado\ABMFamiliar.resx">
-      <DependentUpon>ABMFamiliar.cs</DependentUpon>
+    <EmbeddedResource Include="Empleado\Empleados.resx">
+      <DependentUpon>Empleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Liquidacion\AdminConceptos.resx">
       <DependentUpon>AdminConceptos.cs</DependentUpon>
@@ -207,11 +186,8 @@
     <EmbeddedResource Include="Menu\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Producto\ABMConsulta.resx">
-      <DependentUpon>ABMConsulta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Producto\NuevoProducto.resx">
-      <DependentUpon>NuevoProducto.cs</DependentUpon>
+    <EmbeddedResource Include="Producto\Productos.resx">
+      <DependentUpon>Productos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -222,11 +198,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Proveedor\ABMProveedores.resx">
-      <DependentUpon>ABMProveedores.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Proveedor\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Proveedor\Proveedores.resx">
+      <DependentUpon>Proveedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Venta\PantallaVenta.resx">
       <DependentUpon>PantallaVenta.cs</DependentUpon>

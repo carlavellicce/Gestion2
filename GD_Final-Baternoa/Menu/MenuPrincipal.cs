@@ -24,20 +24,20 @@ namespace GD_Final_Baternoa.Menu
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            Cliente.ABMCLienteConsulta ABMConsul = new Cliente.ABMCLienteConsulta();
-            ABMConsul.Visible = true;
+            Cliente.Clientes c = new Cliente.Clientes();
+            c.Visible = true;
         }
 
         private void btnProveedores_Click(object sender, EventArgs e)
         {
-            Proveedor.ABMProveedorConsulta ABMPC = new Proveedor.ABMProveedorConsulta();
-            ABMPC.Visible = true;
+            Proveedor.Proveedores p = new Proveedor.Proveedores();
+            p.Visible = true;
         }
 
         private void btnEmpleados_Click(object sender, EventArgs e)
         {
-            Empleado.ABMEmpleados ABME = new Empleado.ABMEmpleados();
-            ABME.Visible = true;
+            Empleado.Empleados emp = new Empleado.Empleados();
+            emp.Visible = true;
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -47,9 +47,15 @@ namespace GD_Final_Baternoa.Menu
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
-            Producto.ABMConsulta ABMCP = new Producto.ABMConsulta();
-            ABMCP.Visible = true;
+            Producto.Productos p = new Producto.Productos();
+            p.Visible = true;
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Categoria.CategoriasPrincipal ca = new Categoria.CategoriasPrincipal();
+            ca.Visible = true;
         }
     }
 }

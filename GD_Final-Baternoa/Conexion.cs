@@ -15,9 +15,10 @@ namespace GD_Final_Baternoa
     {
         SqlConnection cn;
         SqlCommand cmd;
-        //SqlDataReader dr;
-        //SqlCommandBuilder cb;
-        //SqlDataAdapter da;
+        SqlDataReader dr;
+        SqlDataAdapter da;
+        DataTable dt;
+        
 
         public Conexion()
         {
@@ -33,14 +34,7 @@ namespace GD_Final_Baternoa
             }
         }
 
-       
-
-        
-
-       
-       
-
-       
+  
 
         public bool insertar(string sql)
         {
@@ -56,6 +50,19 @@ namespace GD_Final_Baternoa
             
         }
 
+        public bool Modificar(string sql)
+        {
+            // cn.Open();
+            cmd = new SqlCommand(sql, cn);
+            int i = cmd.ExecuteNonQuery();
+            if (i > 0)
+            {
+                // cn.Close();
+                return true;
+            }
+            else { return false; }
+
+        }
         public bool Eliminar(string sql)
         {
             // cn.Open();
@@ -69,6 +76,17 @@ namespace GD_Final_Baternoa
             else { return false; }
 
         }
+
+        public void CargarConsulta(DataGridView dgv, string sql)
+        {
+            da = new SqlDataAdapter(sql, cn);
+            dt = new DataTable();
+            da.Fill(dt);
+            dgv.DataSource = dt;
+        }
+
+
+
 
     }
 }
